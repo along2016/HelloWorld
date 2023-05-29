@@ -10,7 +10,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public String addUser() {
         System.out.println("addUser");
-        return "addUser";
+        return "addUser_success";
     }
 
     @Override
