@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<h1>Hello 会员中心</h1>
+<p th:inline="text">Hello<span sec:authentication="name"></span></p>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="登出" />
+</form>
+</body>
+</html>
